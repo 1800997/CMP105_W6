@@ -4,6 +4,10 @@
 #include "Framework/Input.h"
 #include <string.h>
 #include <iostream>
+#include "Gravity.h"
+#include "Moving.h"
+#include "Angry.h"
+#include "Backround.h"
 
 
 class Level{
@@ -25,4 +29,16 @@ private:
 	Input* input;
 
 	// More level variables
+	int windowY,windowX;
+	Gravity gravityBall;
+	sf::Texture gravityBallTexture;
+
+	Moving movingBall;
+	sf::Texture movingBallTexture;
+
+	Angry angryMum;
+	sf::Texture angryMumTexture;
+
+	Backround backround;
+	sf::Texture backroundTexture;
 };
